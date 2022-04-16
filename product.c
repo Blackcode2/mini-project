@@ -20,8 +20,9 @@ int createProduct(struct Fruit *s) {
     getchar();
 
     printf("제품 무게: ");
-    scanf("%s", s->weight);
-    
+    scanf("%[^\n]s", s->weight);
+    getchar();
+
     printf("제품 가격: ");
     scanf("%d", &s->price);
     
@@ -48,7 +49,8 @@ int updateProduct(struct Fruit *s) {
     getchar();
 
     printf("제품 무게: ");
-    scanf("%s", s->weight);
+    scanf("%[^\n]s", s->weight);
+    getchar();
     
     printf("제품 가격: ");
     scanf("%d", &s->price);
