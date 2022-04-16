@@ -34,7 +34,7 @@ int createProduct(struct Fruit *s) {
 
 // 하나의 재품 출력 함수
 void readProduct(struct Fruit s) {
-    printf("%8s | %20s | %4s | %4d | %5d |\n", s.name, s.disc, s.weight, s.price, s.delivery);
+    printf("%8s | %20s | %4s | %4d | %6d   |\n", s.name, s.disc, s.weight, s.price, s.delivery);
 } 
 
 
